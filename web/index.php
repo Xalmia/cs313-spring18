@@ -13,11 +13,11 @@ for ($i = 0; $i < 10; $i++)
 {
   if ($i % 2)
   {
-    echo "<div id='$i' style='color=red;'>Test Text</div>";
+    echo "<div id='$i' style='color: red;'>Test Text</div>";
   }
   else
   {
-    echo "<div id='$i' style='color=blue;'>Test Text</div>";
+    echo "<div id='$i' style='color: blue;'>Test Text</div>";
   }
 }
 ?>
