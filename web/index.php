@@ -7,18 +7,17 @@
   <script src="indexScripts.js"></script>
 </head>
 <body>
-  <h1>Hello World</h1>
 <?php
 
 for ($i = 0; $i < 10; $i++)
 {
   if ($i % 2)
   {
-    echo "<div id='$i' style='fontcolor=red;'></div>";
+    echo "<div id='$i' style='fontcolor=red;'>Test Text</div>";
   }
   else
   {
-    echo "<div id='$i' style='fontcolor=blue;'></div>";
+    echo "<div id='$i' style='fontcolor=blue;'>Test Text</div>";
   }
 }
 ?>
