@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8" />
@@ -9,10 +9,18 @@
 <body>
   <h1>Hello World</h1>
 <?php
-  $var = "<p>:V</p><br/>";
-  for($i=0;i<10;$i++){
-    echo "$var";
+
+for ($i = 0; $i < 10; $i++)
+{
+  if ($i % 2)
+  {
+    echo "<div id='$i' style='fontcolor=red;'></div>";
   }
+  else
+  {
+    echo "<div id='$i' style='fontcolor=blue;'></div>";
+  }
+}
 ?>
 </body>
 </html>
