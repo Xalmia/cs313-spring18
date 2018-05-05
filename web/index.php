@@ -13,12 +13,15 @@
   <?php 
     $currentTimezone = date_default_timezone_get();
     // Variable that holds the date to be displayed.
-    $current_date = date('d/m/Y == H:i:s');
+    $current_date = date('d/m/Y == h:i:s');
     echo "<h3>$current_date $currentTimezone</h3>"
   ?>
 </div>
 <div id="assignments" class="sidebar">
 <?php
+  for($i = 0; $i < 10; $i++){
+    echo "<a href='/assignments/assignment$i.php'>Assignment $i</a>";
+  }
 ?>
 </div>
 <div id="about">
