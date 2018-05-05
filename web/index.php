@@ -11,7 +11,7 @@
   <h1>Jesse Scott's Homepage</h1>
   <br/>
   <?php 
-    $currentTimezone = date_default_timezone_get();
+    date_default_timezone_set("America/Boise");
     // Variable that holds the date to be displayed.
     $current_date = date('d/m/Y == h:i:s');
     echo "<h3>$current_date $currentTimezone</h3>"
@@ -20,7 +20,7 @@
 <div id="assignments" class="sidebar">
 <?php
   for($i = 0; $i < 10; $i++){
-    echo "<a href='/assignments/assignment$i.php'>Assignment $i</a>";
+    echo "<a href='/assignments/assignment$i.php'>Assignment $i</a> <br/>";
   }
 ?>
 </div>
