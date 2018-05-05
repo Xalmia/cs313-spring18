@@ -1,0 +1,19 @@
+.header {
+    background-color: cornflowerblue;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    text-align: center;
+}
+
+.sidebar {
+    background-color: cornflowerblue;
+    border-style: solid;
+    border-color: black;
+    text-align: left;
+    
+}
+
+h1 {
+    font-family: Tahoma;
+    color: darkgray;
+}

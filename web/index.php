@@ -7,19 +7,22 @@
   <script src="indexScripts.js"></script>
 </head>
 <body>
+<div id="header" class="header">
+  <h1>Jesse Scott's Homepage</h1>
+  <br/>
+  <?php 
+    $currentTimezone = date_default_timezone_get();
+    // Variable that holds the date to be displayed.
+    $current_date = date('d/m/Y == H:i:s');
+    echo "<h3>$current_date $currentTimezone</h3>"
+  ?>
+</div>
+<div id="assignments" class="sidebar">
 <?php
-
-for ($i = 0; $i < 10; $i++)
-{
-  if ($i % 2)
-  {
-    echo "<div id='$i' style='color: red;'>Test Text</div>";
-  }
-  else
-  {
-    echo "<div id='$i' style='color: blue;'>Test Text</div>";
-  }
-}
 ?>
+</div>
+<div id="about">
+
+</div>
 </body>
 </html>
