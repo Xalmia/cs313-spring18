@@ -8,7 +8,7 @@
 </head>
 <body>
   <div class="body">
-    <div id="header" class="header, bordered">
+    <div id="header" class="header bordered">
       <h1>Jesse Scott's Homepage</h1>
       <br/>
       <?php 
@@ -20,7 +20,7 @@
         echo "<h3>$current_date $currentTimezone</h3>";
       ?>
     </div>
-    <div id="assignments" class="assignmentBar, bordered">
+    <div id="assignments" class="assignmentBar bordered">
       <a href="aboutMe.php">About Me</a>
       <br/>
       <?php

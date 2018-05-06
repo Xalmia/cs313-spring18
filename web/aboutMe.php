@@ -6,8 +6,8 @@
     <link rel="stylesheet" type="text/css" media="screen" href="indexStyle.css" />
 </head>
 <body>
-    <div id="about" class="">
-        <p>Hi there. My name is Jesse Scott. I am a Software Engineering major</p>
+    <div id="about" class="Header">
+        <h2>Hi there. My name is Jesse Scott. I am a Software Engineering major</h2>
     </div>
 </body>
 </html>
