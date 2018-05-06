@@ -2,18 +2,27 @@
     background-color: cornflowerblue;
     border-bottom-style: solid;
     border-bottom-color: black;
+    border-bottom-width: 2px;
     text-align: center;
 }
 
-.sidebar {
+.bordered:hover {
+    background-color: rgb(0, 138, 46);
+    color: white; 
+}
+
+.assignmentBar {
     background-color: cornflowerblue;
     border-style: solid;
     border-color: black;
+    border-bottom-width: 2px;
     text-align: left;
-    
 }
 
 h1 {
     font-family: Tahoma;
-    color: darkgray;
+}
+
+body {
+    background-color: lightgray;
 }
