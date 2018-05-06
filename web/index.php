@@ -28,8 +28,5 @@
   }
 ?>
 </div>
-<div id="about" class="">
-  <p>Hi there. My name is Jesse Scott. I am a Software Engineering major</p>
-</div>
 </body>
 </html>
