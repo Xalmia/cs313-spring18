@@ -6,11 +6,6 @@
     text-align: center;
 }
 
-.bordered:hover {
-    background-color: rgb(0, 138, 46);
-    color: white; 
-}
-
 .assignmentBar {
     background-color: cornflowerblue;
     border-style: solid;
@@ -18,6 +13,12 @@
     border-bottom-width: 2px;
     text-align: left;
 }
+
+.bordered:hover {
+    background-color: rgb(0, 138, 46);
+    color: white; 
+}
+
 
 h1 {
     font-family: Tahoma;
