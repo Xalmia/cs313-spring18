@@ -26,6 +26,12 @@ body {
     color: white;
 }
 
+.back-link {
+    position: absolute;
+    top: 20px;
+    left: 15px;
+}
+
 h1 {
     font-family: Tahoma;
     opacity: 1;
