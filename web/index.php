@@ -25,7 +25,8 @@
       <br/>
       <?php
         for($i = 0; $i < 10; $i++){
-          echo "<a href='/assignments/assignment$i.php'>Assignment $i</a> <br/>";
+          $tempI = i + 1; //Temporary I value
+          echo "<a href='/assignments/assignment$tempI.php'>Assignment $tempI</a> <br/>";
         }
       ?>
     </div>
