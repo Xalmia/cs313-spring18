@@ -1,13 +1,15 @@
 body {
     background-color: lightgray;
+    background-image: url("spaceBall.png");
 }
 
 .header {
-    background-color: cornflowerblue;
+    background-color: lightgray;
     border-bottom-style: solid;
     border-bottom-color: black;
     border-bottom-width: 2px;
     text-align: center;
+    opacity: .7;
 }
 
 .assignmentBar {
@@ -16,13 +18,24 @@ body {
     border-color: black;
     border-bottom-width: 2px;
     text-align: center;
+    width: 15%;
 }
 
 .bordered:hover {
     background-color: rgb(0, 138, 46);
-    color: white; 
+    color: white;
 }
 
 h1 {
     font-family: Tahoma;
+    opacity: 1;
+}
+
+h3 {
+    font-family: Tahoma;
+    opacity: 1;
+}
+
+backgroundImg {
+    position: relative;
 }
