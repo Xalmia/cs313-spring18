@@ -16,7 +16,7 @@
     <?php include 'Header.php'; ?>
     <div id="about">
         <p>
-            We are about cute puppies, kitties, and fuzzy inbetweens. 
+            We are about cute puppies, kitties, and adorable inbetweens. 
             We sell only the highest quality pet images, and obtain 
             them from the most legtitimate sources you have ever seen.
             Anyone who says otherwise is fake news.

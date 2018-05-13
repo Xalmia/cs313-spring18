@@ -10,9 +10,10 @@
     {
         // If there is a price being given and there is no map, create the map
         if (isset($price)){
-            $_SESSION["cartMap"] = array($productNumber => $priceFloat);            
+            $_SESSION["cartMap"] = array();            
         }
     }
+    array_push($_SESSION["cartMap"], [$productNumber => $priceFloat]);
 ?>
 
 <!DOCTYPE html>
@@ -28,7 +29,23 @@
     <?php include "Header.php"; ?>
     <div id="cartBox">
         <?php
-            echo (var_dump($_SESSION["cartMap"]));
+            $priceInArray;
+            foreach ($_SESSION["cartMap"] as $item) {
+                foreach($item as $itemInMap){
+                    $priceInArray = $itemInMap;
+                }
+                $key=array_keys($item);
+                echo "Price: $$priceInArray, Product $key[0]<br>";
+            }
+            $total = 0.0;
+            foreach ($_SESSION["cartMap"] as $item) {
+                foreach($item as $itemInMap){
+                    $priceInArray = $itemInMap;
+                }
+
+                $total += $priceInArray; 
+            }
+            echo "total: $total";
         ?>
     </div>
 </body>

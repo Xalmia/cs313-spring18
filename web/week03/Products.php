@@ -27,11 +27,12 @@
                     }
 
                     echo "<td align='center'><div id='item' class='product'>
+                        <span class='product-title'>Product $i</span>
                         <img src='Cutibase/Product ($i).gif' alt='Product ($i) gif'
                         height='200px' width='200px'>
                         <div id='price$i' class='price'>
                             <form action='Cart.php' method='POST'>
-                                $priceCalc 
+                                $$priceCalc 
                                 <input type='hidden' value='$priceCalc' name='product' readonly>
                                 <input type='hidden' value='$i' name='itemNumber' readonly>
                                 <input type='submit' value='Add To Cart' name='submitproduct$i' class='button'>
