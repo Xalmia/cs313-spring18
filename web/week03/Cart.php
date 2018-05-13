@@ -17,6 +17,7 @@
     <script src="main.js"></script>
 </head>
 <body>
+    <?php include "Header.php" ?>
     hello
 </body>
 </html>

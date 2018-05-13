@@ -9,7 +9,7 @@
     <script src="Assign03Script.js"></script>
 </head>
 <body>
-    <?php include 'header.php'?>
+    <?php include 'Header.php'?>
 
     <div id="ProductBox">
         <table>
