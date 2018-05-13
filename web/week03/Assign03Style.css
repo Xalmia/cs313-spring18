@@ -1,0 +1,47 @@
+.toolbar {
+    background-color: darksalmon;
+    text-align: center;
+    margin: 0;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+
+}
+
+.cart {
+    text-align: right;
+    position: absolute;
+    right: .8%;
+    top: 5%;
+}
+
+.product {
+    padding: 5px;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    margin: 5px;
+    width: 205px;
+    height: 230px;
+}
+
+.price {
+    text-align: center;
+}
+
+.button {
+    margin-left: 10%;
+}
+
+table {
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;   
+}
+
+h1 {
+    margin: 0;
+    padding: 0;  
+}
