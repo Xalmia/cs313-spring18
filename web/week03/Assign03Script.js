@@ -1,4 +1,4 @@
-function addItem(price, itemNumber){
+/*function addItem(price, itemNumber){
     
     var priceAndItem = "price=" + price + "&itemNumber=" + itemNumber;
     var xhttp = new XMLHttpRequest();
@@ -9,6 +9,7 @@ function addItem(price, itemNumber){
         }
       };
 
-    xhttp.open("POST", "addItem.php", true);
-    xhttp.send(priceAndItem); 
-}
+    xhttp.open("POST", "Cart.php", true);
+    xhttp.send(priceAndItem);
+    document.location = "Cart.php" 
+}*/

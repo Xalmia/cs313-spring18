@@ -3,14 +3,13 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Legitimate Products</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="Assign03Style.css" />
     <script src="Assign03Script.js"></script>
 </head>
 <body>
-    <?php include 'Header.php'?>
-
+<?php include 'Header.php'; ?>
     <div id="ProductBox">
         <table>
             <?php
@@ -31,9 +30,11 @@
                         <img src='Cutibase/Product ($i).gif' alt='Product ($i) gif'
                         height='200px' width='200px'>
                         <div id='price$i' class='price'>
-                            <form action='' method='post'>
-                            $priceCalc 
-                            <input type='button' value='Add To Cart' name='product$i' class='button' onclick='addItem($priceCalc, $i)'>
+                            <form action='Cart.php' method='POST'>
+                                $priceCalc 
+                                <input type='hidden' value='$priceCalc' name='product' readonly>
+                                <input type='hidden' value='$i' name='itemNumber' readonly>
+                                <input type='submit' value='Add To Cart' name='submitproduct$i' class='button'>
                             </form>
                         </div>
                     </div></td>";

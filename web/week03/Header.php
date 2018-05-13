@@ -5,6 +5,6 @@
      | <a href='Assignment03.php'>Home</a> | 
      <a href='Products.php'>Products</a> | 
  </div>
- <a class='cart'>Cart Placeholder</a>
+ <a href='Cart.php' class='cart'>Shopping Cart</a>
 </div>";
 ?>
