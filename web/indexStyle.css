@@ -19,6 +19,7 @@ body {
     border-bottom-width: 2px;
     text-align: center;
     width: 15%;
+    opacity: .7;
 }
 
 .bordered:hover {
@@ -39,6 +40,10 @@ h1 {
 
 h3 {
     font-family: Tahoma;
+    opacity: 1;
+}
+
+a {
     opacity: 1;
 }
 

@@ -23,11 +23,14 @@
     <div id="assignments" class="assignmentBar bordered">
       <a href="aboutMe.php">About Me</a>
       <br/>
+      <a href="hello.html">Assignment 1</a> </br>
+      <a href="index.php">Assignment 2</a> </br>
+      <a href="week03/Assignment03.php">Assignment 3</a> </br>
       <?php
-        for($i = 0; $i < 10; $i++){
-          $tempI = $i + 1; //Temporary I value
-          echo "<a href='/assignments/assignment$tempI.php'>Assignment $tempI</a> <br/>";
-        }
+        /*for($i = 3; $i < 10; $i++){
+          $assignmentNumber = $i + 1; //Temporary I value
+          echo "<a href='/week0$assignmentNumber/assignment0$assignmentNumber.php'>Assignment $tempI</a> <br/>";
+        }*/
       ?>
     </div>
 </div>
