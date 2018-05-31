@@ -30,8 +30,13 @@
 
     <ul>
         <?php
-            echo "hello";
-            var_dump($courses);
+            foreach($courses as $course)
+            {
+                $name = $course["name"];
+                $number = $course["number"];
+
+                echo "<li>$number - $name</li>";
+            }
         ?>
         <li><p>Course 1</p></li>
         <li><p>Course 2</p></li>
