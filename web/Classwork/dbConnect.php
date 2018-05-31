@@ -10,7 +10,7 @@ function get_db() {
 	$db = NULL;
 	try {
 		// default Heroku Postgres configuration URL
-		$dbUrl = getenv('DATABASE_URL');
+		$dbUrl = getenv('HEROKU_POSTGRESQL_GRAY');
 		// Get the various parts of the DB Connection from the URL
 		$dbOpts = parse_url($dbUrl);
 		$dbHost = $dbOpts["host"];
