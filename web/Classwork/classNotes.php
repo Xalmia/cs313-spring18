@@ -30,6 +30,7 @@
 
     <ul>
         <?php
+            echo "hello";
             var_dump($courses);
         ?>
         <li><p>Course 1</p></li>
