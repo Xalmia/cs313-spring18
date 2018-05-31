@@ -12,7 +12,8 @@
     $statement = $db->prepare($query);
 
     // bind variables if necessary
-    $courses = $statement->execute()->fetchAll(PDO::FETCH_ASSOC);
+    $statement->execute();
+    $courses = $statement->fetchAll(PDO::FETCH_ASSOC);
 ?>
 <!DOCTYPE html>
 <html>
