@@ -38,8 +38,9 @@
     <div name="noteSubmit">
         <form action="insertNote.php" method="POST">
             <textarea name="noteContent" placeholder="Type new note here"></textarea>
-            <input type="hidden" name="course_id" value="<?php echo $course_id;?>">
+            <input type="hidden" name="course_id" value="<?php echo $course_id;?>"><br>
             <input type="date" name="date"></br>
+            <input type="submit" value="Add Note">
         </form>
     </div>
     <p>Test text for notes</p>
