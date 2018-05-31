@@ -35,6 +35,13 @@
     ?>  
     <h1><?php echo "$number - $name Notes" ?></h1>
 
+    <div name="noteSubmit">
+        <form action="insertNote.php" method="POST">
+            <textarea name="noteContent" placeholder="Type new note here"></textarea>
+            <input type="hidden" name="course_id" value="<?php echo $course_id;?>">
+            <input type="date" name="date"></br>
+        </form>
+    </div>
     <p>Test text for notes</p>
 </body>
 </html>
