@@ -20,6 +20,6 @@
 
     $statement->execute();
 
-    header("location: courseDetails.php?course_id=$course_id");
+    header("location: classNotes.php?course_id=$course_id");
     die();
 ?>
