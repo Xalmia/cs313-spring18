@@ -7,7 +7,7 @@
         die("Database Connection was not set.");
     }
 
-    $query = "SELECT section_id, section_title FROM section_in_journal";
+    $query = "SELECT journal_id, journal_title FROM journal";
     $statement = $db->prepare($query);
 
     // bind variables if necessary
@@ -27,14 +27,14 @@
 </head>
 <body>
     <div name="header">
-        <h1> Welcome! </h1></br>
+        <h1> Welcome! Select a journal.</h1></br>
         
     </div>
-    <div name="sections">
-        <ul class="header-sections"> 
+    <div name="journals">
+        <ul class="journal-list"> 
             <?php //foreach section, print a thing
-                $section_Name = $section["section_title"];
-                echo "<li>$section_Name</li>"
+                $sectionName = $section["section_title"];
+                echo "<li>$sectionName</li>"
             ?>
         </ul>
     </div>
