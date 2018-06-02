@@ -1,5 +1,4 @@
 <?php
-    echo "page loaded <br>";
     require("dbConnect.php");
 
     $db = get_db();
@@ -8,8 +7,7 @@
         die("Database Connection was not set.");
     }
 
-    $query = "SELECT id, section_title FROM section_in_journal";
-    echo $query;
+    $query = "SELECT section_id, section_title FROM section_in_journal";
     $statement = $db->prepare($query);
 
     // bind variables if necessary
