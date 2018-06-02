@@ -1,4 +1,5 @@
 <?php
+    echo "page loaded <br>";
     require("dbConnect.php");
 
     $db = get_db();
@@ -8,13 +9,14 @@
     }
 
     $query = "SELECT id, section_title FROM section_in_journal";
-
+    echo $query;
     $statement = $db->prepare($query);
 
     // bind variables if necessary
     $statement->execute();
     $section = $statement->fetchAll(PDO::FETCH_ASSOC);
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -32,7 +34,10 @@
     </div>
     <div name="sections">
         <ul class="header-sections"> 
-            
+            <?php //foreach section, print a thing
+                $section_Name = $section["section_title"];
+                echo "<li>$section_Name</li>"
+            ?>
         </ul>
     </div>
 </body>
