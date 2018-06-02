@@ -12,7 +12,7 @@
 
     // bind variables if necessary
     $statement->execute();
-    $section = $statement->fetchAll(PDO::FETCH_ASSOC);
+    $journal = $statement->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
 <!DOCTYPE html>
@@ -33,7 +33,8 @@
     <div name="journals">
         <ul class="journal-list"> 
             <?php //foreach section, print a thing
-                $journalName = $section["journal_title"];
+                $journalName = $journal["journal_title"];
+                var_dump($journal);
                 echo "<li>$journalName</li>"
             ?>
         </ul>
