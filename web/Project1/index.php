@@ -1,3 +1,20 @@
+<?php
+    require("dbConnect.php");
+
+    $db = get_db();
+
+    if (!isset($db)){
+        die("Database Connection was not set.");
+    }
+
+    $query = "SELECT id, section_title FROM section_in_journal";
+
+    $statement = $db->prepare($query);
+
+    // bind variables if necessary
+    $statement->execute();
+    $section = $statement->fetchAll(PDO::FETCH_ASSOC);
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,6 +26,17 @@
     <script src="projectScript.js"></script>
 </head>
 <body>
-    <
+    <div name="header">
+        <h1> Welcome! </h1></br>
+        
+    </div>
+    <div name="sections">
+        <ul class="header-sections"> 
+            <?php //foreach section, print a thing
+                $section_Name = $section["section_title"];
+                echo "<li>$section_Name</li>"
+            ?>
+        </ul>
+    </div>
 </body>
 </html>

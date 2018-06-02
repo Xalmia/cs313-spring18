@@ -26,6 +26,7 @@
       <a href="hello.html">Assignment 1</a> </br>
       <a href="index.php">Assignment 2</a> </br>
       <a href="week03/Assignment03.php">Assignment 3</a> </br>
+      <a href="Project1/index.php">Project 1</a>
       <?php
         /*for($i = 3; $i < 10; $i++){
           $assignmentNumber = $i + 1; //Temporary I value

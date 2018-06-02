@@ -43,6 +43,8 @@
             <input type="submit" value="Add Note">
         </form>
     </div>
-    <p>Test text for notes</p>
+    <?php 
+    // Insert a foreach for the notes in the DB
+    ?>
 </body>
 </html>
