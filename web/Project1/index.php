@@ -33,9 +33,8 @@
     <div name="journals">
         <ul class="journal-list"> 
             <?php //foreach section, print a thing
-                $sectionName = $section["section_title"];
-                var_dump($section);
-                echo "<li>$sectionName</li>"
+                $journalName = $section["journal_title"];
+                echo "<li>$journalName</li>"
             ?>
         </ul>
     </div>
