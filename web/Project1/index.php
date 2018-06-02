@@ -32,10 +32,7 @@
     </div>
     <div name="sections">
         <ul class="header-sections"> 
-            <?php //foreach section, print a thing
-                $section_Name = $section["section_title"];
-                echo "<li>$section_Name</li>"
-            ?>
+            
         </ul>
     </div>
 </body>
