@@ -34,6 +34,7 @@
         <ul class="journal-list"> 
             <?php //foreach section, print a thing
                 $sectionName = $section["section_title"];
+                objdump($section);
                 echo "<li>$sectionName</li>"
             ?>
         </ul>
