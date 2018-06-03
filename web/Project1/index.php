@@ -27,7 +27,7 @@
 </head>
 <body>
     <div name="header">
-        <h1> Welcome! Select a journal.</h1></br>
+        <h1> Welcome! Select a Journal.</h1></br>
         
     </div>
     <div name="journals">

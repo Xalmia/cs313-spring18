@@ -7,12 +7,12 @@
         die("Database Connection was not set.");
     }
 
-    $query = "SELECT section_id, section_title FROM section_in_journal";
+    $query = "SELECT page_id, page_title FROM page_in_journal";
     $statement = $db->prepare($query);
 
     // bind variables if necessary
     $statement->execute();
-    $section = $statement->fetchAll(PDO::FETCH_ASSOC);
+    $page = $statement->fetchAll(PDO::FETCH_ASSOC);
 ?>
 <!DOCTYPE html>
 <html>
@@ -26,13 +26,13 @@
 </head>
 <body>
 <div name="header">
-        <h1> Welcome! Select a Section.</h1></br>
+        <h1> Welcome! Select a Page.</h1></br>
     </div>
-    <div name="sections">
-        <ul class="section-list"> 
-            <?php //foreach section, print a thing
-                $sectionName = $section["section_title"];
-                echo "<li><a href='pages.php'>$sectionName</a></li>";
+    <div name="pages">
+        <ul class="page-list"> 
+            <?php //foreach page, print a thing
+                $pageName = $page["page_title"];
+                echo "<li><a href='page_display.php'>$pageName</a></li>";
             ?>
         </ul>
     </div>
