@@ -7,12 +7,12 @@
         die("Database Connection was not set.");
     }
 
-    $query = "SELECT page_id, page_title FROM page_in_journal";
+    $query = "SELECT text_box_location, text_content FROM text_box";
     $statement = $db->prepare($query);
 
     // bind variables if necessary
     $statement->execute();
-    $pages = $statement->fetchAll(PDO::FETCH_ASSOC);
+    $textBoxes = $statement->fetchAll(PDO::FETCH_ASSOC);
 ?>
 <!DOCTYPE html>
 <html>
@@ -25,19 +25,14 @@
     <script src="main.js"></script>
 </head>
 <body>
-<div name="header">
-        <h1> Welcome! Select a Page.</h1></br>
-    </div>
-    <div name="pages">
-        <ul class="page-list"> 
-            <?php //foreach page, print a thing
-            foreach ($pages as $page)
-            {
-                $pageName = $page["page_title"];
-                echo "<li><a href='currentPage.php'>$pageName</a></li>";
-            }
-            ?>
-        </ul>
-    </div>
+    <?php
+        foreach ($textBoxes as $box)
+        {
+            $content = $box["text_content"];
+            $location = $box["text_box_location"];
+            echo $location;
+            echo "<p class='page-content'>$content</p>";
+        }
+    ?>
 </body>
 </html>
