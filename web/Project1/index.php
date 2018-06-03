@@ -34,6 +34,7 @@
         <ul class="journal-list"> 
             <?php //foreach section, print a thing
                 $journalName = $journal["journal_title"];
+                var_dump($journal);
                 echo "<li><a href='sections.php'>$journalName</a></li>";
             ?>
         </ul>
