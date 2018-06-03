@@ -12,7 +12,7 @@
 
     // bind variables if necessary
     $statement->execute();
-    $section = $statement->fetchAll(PDO::FETCH_ASSOC);
+    $sections = $statement->fetchAll(PDO::FETCH_ASSOC);
 ?>
 <!DOCTYPE html>
 <html>
@@ -31,8 +31,11 @@
     <div name="sections">
         <ul class="section-list"> 
             <?php //foreach section, print a thing
+            foreach ($sections as $section)
+            {
                 $sectionName = $section["section_title"];
                 echo "<li><a href='pages.php'>$sectionName</a></li>";
+            }
             ?>
         </ul>
     </div>

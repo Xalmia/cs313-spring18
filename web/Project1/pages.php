@@ -12,7 +12,7 @@
 
     // bind variables if necessary
     $statement->execute();
-    $page = $statement->fetchAll(PDO::FETCH_ASSOC);
+    $pages = $statement->fetchAll(PDO::FETCH_ASSOC);
 ?>
 <!DOCTYPE html>
 <html>
@@ -31,8 +31,11 @@
     <div name="pages">
         <ul class="page-list"> 
             <?php //foreach page, print a thing
+            foreach ($pages as $page)
+            {
                 $pageName = $page["page_title"];
                 echo "<li><a href='page_display.php'>$pageName</a></li>";
+            }
             ?>
         </ul>
     </div>
