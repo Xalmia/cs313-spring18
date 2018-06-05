@@ -4,7 +4,7 @@
 
     require('../dbConnect.php');
 
-    echo "Validating login";
+    echo "Validating login<br>";
 
     $uName = $_POST['username'];
     $pWord = $_POST['password'];
@@ -14,7 +14,6 @@
     $query = "SELECT * FROM user_table WHERE username=:userN;";
 
     $statement = $db->prepare($query);
-
     $statement->bindValue('userN', $uName);
 
     $userValues = $statement->fetchAll(PDO::FETCH_ASSOC);
@@ -29,6 +28,7 @@
     }
     else
     {
+        var_dump($db);
         echo "It didn't work.";
         var_dump($userValues);
         echo"<br>";
