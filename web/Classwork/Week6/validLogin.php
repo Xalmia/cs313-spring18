@@ -15,7 +15,7 @@
 
     $statement = $db->prepare($query);
     $statement->bindValue('userN', $uName);
-
+    $statement->execute();
     $userValues = $statement->fetchAll(PDO::FETCH_ASSOC);
 
     $userPWord = $userValues["user_password"];
