@@ -29,7 +29,8 @@
     }
     else
     {
-        header('Location: index.php');
-        die(); //potato.
+        echo "It didn't work.";
+        var_dump($userValues);
+        echo"<br>";
     }
 ?>
