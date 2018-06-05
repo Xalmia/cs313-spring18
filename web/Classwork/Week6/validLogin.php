@@ -28,7 +28,7 @@
     }
     else
     {
-        var_dump($db);
+        var_dump($userPWord);
         echo "It didn't work.";
         var_dump($userValues);
         echo"<br>";
