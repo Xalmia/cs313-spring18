@@ -18,7 +18,7 @@
     $statement->execute();
     $userValues = $statement->fetchAll(PDO::FETCH_ASSOC);
 
-    $userPWord = $userValues["user_password"];
+    $userPWord = $userValues[0]["user_password"];
 
     if (password_verify($userPWord, $pWord))
     {
