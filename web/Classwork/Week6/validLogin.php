@@ -20,7 +20,7 @@
 
     $userPWord = $userValues[0]["user_password"];
 
-    if (password_verify($userPWord, $pWord))
+    if (password_verify($pWord, $userPWord))
     {
         $_SESSION["activeUser"] = $uName;
         header('Location: welcome.php');
