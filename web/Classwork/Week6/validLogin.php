@@ -7,7 +7,7 @@
     echo "Validating login";
 
     $uName = $_POST['username'];
-    $pWord = password_hash($_POST['password'], PASSWORD_DEFAULT);
+    $pWord = $_POST['password'];
 
     $db = get_db();
 
@@ -19,7 +19,9 @@
 
     $userValues = $statement->fetchAll(PDO::FETCH_ASSOC);
 
-    if (password_verify('Incorrect login information', $pWord))
+    $userPWord = $userValues["user_password"];
+
+    if (password_verify($userPWord, $pWord))
     {
         $_SESSION["activeUser"] = $uName;
         header('Location: welcome.php');
