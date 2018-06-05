@@ -1,14 +1,26 @@
 INSERT INTO text_box (text_box_location, text_content)
 VALUES ( '(20,20)' , 'This is test test for testing the read-only database.');
 
-INSERT INTO page_in_journal (text_box_fk, page_title)
-VALUES ('1', 'Test Page');
+INSERT INTO page_in_journal (page_title)
+VALUES ('Test Page');
 
-INSERT INTO section_in_journal (page_fk, section_title)
-VALUES ('1', 'Test Section');
+INSERT INTO section_in_journal (section_title)
+VALUES ('Test Section');
 
-INSERT INTO journal (section_fk, journal_title)
-VALUES ('1', 'Test Journal');
+INSERT INTO journal (journal_title)
+VALUES ('Test Journal');
 
-INSERT INTO user_file(journal_fk)
-VALUES ('1');
+INSERT INTO user_file(user_name)
+VALUES ('test_user_1');
+
+INSERT INTO user_journal(user_fk, journal_fk)
+VALUES ('1', '1');
+
+INSERT INTO journal_section(journal_fk, section_fk)
+VALUES ('1', '1');
+
+INSERT INTO section_page(section_fk, page_fk)
+VALUES ('1', '1');
+
+INSERT INTO page_text(page_fk, text_fk)
+VALUES ('1', '1');
