@@ -63,8 +63,9 @@ CREATE TABLE page_image
 CREATE TABLE user_file
 (
     user_id SERIAL PRIMARY KEY,
-    user_name VARCHAR(100) NOT NULL,
-    image_fk INTEGER REFERENCES image_handler(image_id)
+    username VARCHAR(100) NOT NULL,
+    image_fk INTEGER REFERENCES image_handler(image_id),
+    user_password VARCHAR(256) NOT NULL
 );
 
 CREATE TABLE user_journal

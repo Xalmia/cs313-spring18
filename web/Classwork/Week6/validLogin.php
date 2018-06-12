@@ -28,9 +28,7 @@
     }
     else
     {
-        var_dump($userPWord);
-        echo "It didn't work.";
-        var_dump($userValues);
-        echo"<br>";
+        header('Location: login.php?loginFail=1');
+        die();
     }
 ?>
